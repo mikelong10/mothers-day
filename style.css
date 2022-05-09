@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Courgette", cursive;
+  scroll-behavior: smooth;
+}
+
+h2 {
+  font-size: 4rem;
+  color: #250d4f;
+}
+
+p,
+figcaption {
+  font-size: 4rem;
+}
+
+img {
+  height: 90vh;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+video {
+  width: 100%;
+  height: 90vh;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero {
+  background-image: url("img/mom-charlie-grad.JPG");
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  z-index: 1;
+}
+
+#hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #f3d1ef;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+#hero .hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: flex-end;
+}
+
+#hero .title {
+  text-align: end;
+}
+
+#hero h1 {
+  display: block;
+  width: fit-content;
+  font-size: 9rem;
+  position: relative;
+  color: #772c84;
+  text-align: end;
+}
+
+#pics .container {
+  background-color: #f3d1ef;
+}
+
+#pics .gallery-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 40px auto;
+  overflow: hidden;
+}
