@@ -15,13 +15,19 @@ h2 {
   color: #250d4f;
 }
 
-p,
+p {
+  font-size: 4rem;
+  color: #250d4f;
+}
+
 figcaption {
   font-size: 4rem;
+  margin-top: 10px;
+  color: #250d4f;
 }
 
 img {
-  height: 90vh;
+  height: 88vh;
   object-fit: cover;
   border-radius: 40px;
 }
@@ -82,6 +88,11 @@ video {
 
 #pics .container {
   background-color: #f3d1ef;
+}
+
+#pics .gallery {
+  margin-top: 40px;
+  text-align: center;
 }
 
 #pics .gallery-item {
